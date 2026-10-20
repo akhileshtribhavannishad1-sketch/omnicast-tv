@@ -524,7 +524,7 @@
             <span>ZERO-G</span>
             <span class="sub-label">0.00 m/s²</span>
           </div>
-          <div class="mode-btn focusable" id="btn-mode-antig" data-nav="1,1" tabindex="0">
+          <div class="mode-btn focusable" id="btn-mode-reverse" data-nav="1,1" tabindex="0">
             <span>REVERSE-G</span>
             <span class="sub-label">-9.81 m/s²</span>
           </div>
@@ -709,7 +709,7 @@
      * ===================================================================== */
     const navGrid = [
       ['pulse-btn'],
-      ['btn-mode-zerog', 'btn-mode-antig', 'btn-mode-lunar'],
+      ['btn-mode-zerog', 'btn-mode-reverse', 'btn-mode-lunar'],
       ['card-wellness'],
       ['card-summary']
     ];
@@ -799,8 +799,8 @@
         triggerRepulsorPulse();
       } else if (targetId === 'btn-mode-zerog') {
         setGravityMode('zerog');
-      } else if (targetId === 'btn-mode-antig') {
-        setGravityMode('antig');
+      } else if (targetId === 'btn-mode-reverse') {
+        setGravityMode('reverse');
       } else if (targetId === 'btn-mode-lunar') {
         setGravityMode('lunar');
       } else if (targetId === 'card-wellness') {
@@ -962,9 +962,9 @@
         gravityY = 0.00;
         document.getElementById('btn-mode-zerog').classList.add('active');
         hud.innerText = 'GRAV FIELD: 0.00 m/s² (ZERO-G)';
-      } else if (mode === 'antig') {
+      } else if (mode === 'reverse') {
         gravityY = -0.18; // Inverted gravity: float upwards
-        document.getElementById('btn-mode-antig').classList.add('active');
+        document.getElementById('btn-mode-reverse').classList.add('active');
         hud.innerText = 'GRAV FIELD: -9.81 m/s² (INVERTED REVERSAL)';
       } else if (mode === 'lunar') {
         gravityY = 0.04;
