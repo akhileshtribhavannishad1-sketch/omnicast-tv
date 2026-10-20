@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>OmniCast: Anti-Gravity Dashboard &amp; Simulator (Fire TV Edition)</title>
+  <title>OmniCast: Ambient Dashboard &amp; Space Simulator (Fire TV Edition)</title>
   <meta name="theme-color" content="#070a14">
   <style>
     :root {
@@ -154,7 +154,7 @@
       overflow: hidden;
     }
 
-    /* Left: Anti-Gravity Physics Simulator Sandbox */
+    /* Left: Orbital Physics Simulator Sandbox */
     .sandbox-container {
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
@@ -481,7 +481,7 @@
 
   <!-- Main Split Layout -->
   <main>
-    <!-- Left: Anti-Gravity Physics Simulator Sandbox -->
+    <!-- Left: Orbital Physics Simulator Sandbox -->
     <section class="sandbox-container">
       <div class="sandbox-header">
         <div class="sandbox-title">
@@ -505,7 +505,7 @@
       <div class="sandbox-footer-controls">
         <button class="btn-primary focusable" id="pulse-btn" data-nav="0,0" tabindex="0">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-          TRIGGER ANTI-GRAVITY REPULSOR PULSE [SELECT / ENTER]
+          TRIGGER ORBITAL REPULSOR PULSE [SELECT / ENTER]
         </button>
       </div>
     </section>
@@ -525,7 +525,7 @@
             <span class="sub-label">0.00 m/s²</span>
           </div>
           <div class="mode-btn focusable" id="btn-mode-antig" data-nav="1,1" tabindex="0">
-            <span>ANTI-GRAV</span>
+            <span>REVERSE-G</span>
             <span class="sub-label">-9.81 m/s²</span>
           </div>
           <div class="mode-btn focusable" id="btn-mode-lunar" data-nav="1,2" tabindex="0">
@@ -585,7 +585,7 @@
           <span style="color: var(--accent-purple); font-size: 11px;">FIRE TV AMBIENT</span>
         </div>
         <p style="font-size: 14px; line-height: 1.5; color: #cbd5e1;">
-          "Good afternoon. Anti-gravity atmospheric sensors report nominal solar wind speed (380 km/s). Your Fire TV has saved 42 mins of idle screen consumption today via low-power ambient particle telemetry."
+          "Good afternoon. Orbital atmospheric sensors report nominal solar wind speed (380 km/s). Your Fire TV has saved 42 mins of idle screen consumption today via low-power ambient particle telemetry."
         </p>
       </div>
 
@@ -644,7 +644,7 @@
         osc.stop(this.ctx.currentTime + 0.04);
       }
 
-      // Massive Anti-Gravity Repulsor Pulse Sub-Bass Blast
+      // Massive Orbital Repulsor Pulse Sub-Bass Blast
       playRepulsorBlast() {
         this.init();
         if (!this.ctx) return;
@@ -829,7 +829,7 @@
     });
 
     /* =====================================================================
-     * 3. ZERO-G ANTI-GRAVITY PHYSICS SANDBOX ENGINE
+     * 3. ZERO-G ORBITAL PHYSICS SANDBOX ENGINE
      * ===================================================================== */
     const canvas = document.getElementById('sim-canvas');
     const ctx = canvas.getContext('2d');
@@ -965,7 +965,7 @@
       } else if (mode === 'antig') {
         gravityY = -0.18; // Inverted gravity: float upwards
         document.getElementById('btn-mode-antig').classList.add('active');
-        hud.innerText = 'GRAV FIELD: -9.81 m/s² (ANTI-GRAV REVERSAL)';
+        hud.innerText = 'GRAV FIELD: -9.81 m/s² (INVERTED REVERSAL)';
       } else if (mode === 'lunar') {
         gravityY = 0.04;
         document.getElementById('btn-mode-lunar').classList.add('active');

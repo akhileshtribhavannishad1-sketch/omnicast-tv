@@ -1,4 +1,4 @@
-﻿# 🌌 OmniCast TV: Anti-Gravity Dashboard & Simulator
+﻿# 🌌 OmniCast TV: Ambient Dashboard & Simulator
 > **Native 10-Foot Leanback Experience Designed Specifically for Amazon Fire TV**
 
 OmniCast TV transforms an idle Fire TV into an ambient, interactive cosmic command center. Powered by a real-time Zero-G orbital physics sandbox, synthesized Web Audio telemetry effects, and 10-foot glanceable widgets, it turns living rooms into zero-gravity wellness and media hubs.
@@ -12,8 +12,8 @@ OmniCast TV transforms an idle Fire TV into an ambient, interactive cosmic comma
   - High-contrast glowing cyan & gold focus borders with smooth 1.05x leanback scaling visible from 10+ feet.
 - **Zero-G Physics Simulator Sandbox**:
   - Real-time orbital celestial bodies and particles with inertia and canvas constellation lines.
-  - Interactive **Anti-Gravity Repulsor Pulse** triggered on SELECT / ENTER with sub-bass frequency drops.
-  - Multi-mode gravity calibration: **Zero-G (0.00 m/s²)**, **Anti-Grav Reversal (-9.81 m/s²)**, and **Lunar Orbit (1.62 m/s²)**.
+  - Interactive **Orbital Repulsor Pulse** triggered on SELECT / ENTER with sub-bass frequency drops.
+  - Multi-mode gravity calibration: **Zero-G (0.00 m/s²)**, **Inverted Reversal (-9.81 m/s²)**, and **Lunar Orbit (1.62 m/s²)**.
 - **Synthesized Web Audio API Soundscape**:
   - Deep resonant sub-bass blasts and futuristic directional navigation blips synthesized natively via Web Audio API. Zero external audio file dependencies.
 - **Glanceable Leanback Ambient Widgets**:
